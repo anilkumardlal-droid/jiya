@@ -235,3 +235,37 @@ html, body{
   0%{background-position:0% 50%;}
   100%{background-position:300% 50%;}
 }
+
+.marquee{
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+  padding: 10px 0;
+}
+
+.marquee-track{
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.marquee-track span{
+  white-space: nowrap;
+  color: #fff;
+  font-size: 14px;
+  padding-right: 60px;
+}
+
+@keyframes marquee{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-50%);
+  }
+}
+
+/* pause on hover */
+.marquee-track:hover{
+  animation-play-state: paused;
+}
