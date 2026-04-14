@@ -48,7 +48,7 @@ function sendForm(e){
   btn.style.display = "none";
   statusMsg.style.display = "block";
 
-  let time = 5;
+  let time = 6;
 
   const timer = setInterval(()=>{
     statusMsg.innerText = `Your message has been sent, please wait ${time}s`;
@@ -64,7 +64,7 @@ function sendForm(e){
   message: message.value
 })
 .then(()=>{
-  statusMsg.innerText = "✅ Thank you! Your message has been sent.";
+  statusMsg.innerText = "✅ Thank you! Your message has been received. We will contact you soon.";
 
   name.value = "";
   email.value = "";
