@@ -239,14 +239,13 @@ html, body{
 .marquee{
   width: 100%;
   overflow: hidden;
-  background: #000;
   padding: 10px 0;
 }
 
 .marquee-track{
   display: flex;
   width: max-content;
-  animation: marquee 35s linear infinite;
+  animation: marquee 75s linear infinite;
 }
 
 .marquee-track span{
