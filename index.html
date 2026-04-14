@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>jiya.xyz - Premium Domain for Sale</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css"/>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="left">
+    <div class="logo">
+      <img src="/images/Securoz-logo.png" alt="Securoz Logo">
+    </div>
+    <h1 class="gradient-text gradient-text-anim">jiya.xyz</h1>
+    <h2>is for sale</h2>
+    <h3>PRICE ON APPLICATION</h3>
+  </div>
+
+  <div class="right" id="form">
+    <div class="form-box">
+      <h2>Contact Buyer →</h2>
+      <p>If you are interested in purchasing this domain name, please complete the below form.</p>
+
+      <div class="field">
+        <input type="text" id="name" placeholder="Name">
+        <small class="error"></small>
+      </div>
+
+      <div class="field">
+        <input type="email" id="email" placeholder="Email">
+        <small class="error"></small>
+      </div>
+
+      <div class="field">
+        <input id="phone" type="tel">
+        <small class="error"></small>
+      </div>
+
+      <div class="field">
+        <textarea id="message" placeholder="Message"></textarea>
+        <small class="error"></small>
+      </div>
+
+      <button type="button" class="submit" onclick="sendForm(event)">
+        SUBMIT
+      </button>
+
+      <div id="statusMsg"></div>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<!-- ✅ External JS -->
+<script src="script.js"></script>
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
+</body>
+</html>
