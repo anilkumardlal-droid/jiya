@@ -269,13 +269,3 @@ html, body{
 .marquee-track:hover{
   animation-play-state: paused;
 }
-
-header{
-  position: relative;
-  z-index: 10;
-}
-
-.marquee{
-  position: relative;
-  z-index: 1;
-}
