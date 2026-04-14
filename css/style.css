@@ -18,14 +18,10 @@ body::before{
   inset:0;
   pointer-events:none;
 
-  background: linear-gradient(
-    to top,
-    rgba(0,0,0,1) 0%,     /* bottom full dark */
-    rgba(0,0,0,0.7) 40%,
-    rgba(0,0,0,0.3) 70%,
-    rgba(0,0,0,0) 100%    /* top light */
-  );
-}
+background:
+    radial-gradient(circle at top, rgba(255,165,0,0.08), transparent 40%),
+    linear-gradient(to top, #000000, #111111);
+  }
 
 /* LAYOUT */
 .container{
