@@ -240,6 +240,11 @@ html, body{
   width: 100%;
   overflow: hidden;
   padding: 10px 0;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 
 .marquee-track{
@@ -277,4 +282,10 @@ html, body{
 .container{
   position: relative;
   z-index: 2;
+}
+
+.logo{
+  position:absolute;
+  top:60px;
+  left:20px;
 }
