@@ -72,8 +72,8 @@ function sendForm(e){
   message.value = "";
 
   setTimeout(() => {
-    location.reload();
-  }, 3000);
+  window.location.href = window.location.href;
+}, 3000);
 })
 .catch(()=>{
   statusMsg.innerText = "❌ Error sending message";
