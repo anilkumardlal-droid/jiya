@@ -5,33 +5,261 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>jiya.xyz Domain For Sale</title>
+<title>blogup.in Domain For Sale</title>
 
 <meta name="description"
-content="jiya.xyz premium domain is available for sale. Direct owner, fast transfer, secure transaction. Contact via WhatsApp for purchase details.">
+content="blogup.in premium domain is available for sale. Direct owner, fast transfer, secure transaction. Contact via WhatsApp for purchase details.">
 
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-<!-- CSS LINK -->
-<link rel="stylesheet" href="style.css">
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Manrope",sans-serif;
+}
+
+body{
+
+height:100vh;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+color:white;
+
+background-image:url("ak/bg.jpg");
+background-size:cover;
+background-position:center;
+
+overflow:hidden;
+
+}
+
+
+
+/* STARS */
+
+.stars{
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+z-index:-1;
+}
+
+.stars span{
+
+position:absolute;
+
+width:3px;
+height:3px;
+
+background:white;
+
+border-radius:50%;
+
+opacity:.7;
+
+animation:skyMove 40s linear infinite;
+
+}
+
+@keyframes skyMove{
+
+0%{transform:translateY(0);}
+100%{transform:translateY(-1200px);}
+
+}
+
+/* HERO */
+
+.hero{
+position:relative;
+text-align:center;
+}
+
+/* TYPOGRAPHY */
+
+.hero h2{
+
+font-size:5vw;
+letter-spacing:-0.04em;
+margin-bottom:5px;
+line-height:0.9;
+
+}
+
+.hero h1{
+
+font-size:11vw;
+letter-spacing:-0.05em;
+font-weight:800;
+line-height:0.85;
+
+}
+
+.light{
+font-weight:400;
+}
+
+.bold{
+font-weight:800;
+}
+
+/* FOR SALE */
+
+.sale{
+
+background:linear-gradient(90deg,#ffffff,#0d0d0d,#ffffff);
+
+background-size:200% auto;
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+animation:gradientMove 6s ease infinite;
+
+}
+
+@keyframes gradientMove{
+
+0%{background-position:0% 50%;}
+100%{background-position:200% 50%;}
+
+}
+
+/* GLOBE */
+
+.globe{
+display:none;
+}
+
+@keyframes spin{
+
+from{
+transform:translateY(-50%) rotate(0deg);
+}
+
+to{
+transform:translateY(-50%) rotate(360deg);
+}
+
+}
+
+/* TAGLINE */
+
+.tagline{
+margin-top:60px;
+font-size:18px;
+color:#cbd5e1;
+}
+
+/* BUTTONS */
+
+.buttons{
+
+margin-top:35px;
+
+display:flex;
+gap:20px;
+justify-content:center;
+
+}
+
+.btn{
+
+padding:10px 22px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:400;
+
+}
+
+.whatsapp{
+
+background:#c503e7;
+color:white;
+
+}
+
+.buy{
+
+border:1px solid white;
+color:white;
+
+}
+
+.buy:hover{
+
+background:white;
+color:black;
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h2{
+font-size:10vw;
+line-height:50px;
+}
+
+.hero h1{
+font-size:16vw;
+}
+
+.globe{
+width:200px;
+height:200px;
+}
+
+}
+
+</style>
 
 </head>
 
 <body>
 
-<div class="stars" id="stars"></div>
+<div class="stars">
+
+<span style="left:10%;top:90%"></span>
+<span style="left:20%;top:80%"></span>
+<span style="left:35%;top:95%"></span>
+<span style="left:50%;top:85%"></span>
+<span style="left:70%;top:90%"></span>
+<span style="left:85%;top:88%"></span>
+
+</div>
 
 <section class="hero">
 
 <h2>
+
 <span class="light">This domain is</span>
 <span class="bold sale">FOR SALE</span>
+
 </h2>
 
-<h1>jiya.xyz</h1>
+<h1>
+
+blogup.IN
+
+</h1>
 
 <p class="tagline">
+
 Direct Owner • Fast Transfer • Serious Buyers Only
+
 </p>
 
 <div class="buttons">
@@ -39,20 +267,21 @@ Direct Owner • Fast Transfer • Serious Buyers Only
 <a class="btn whatsapp"
 href="https://wa.me/919099909203"
 target="_blank">
+
 Contact Us
+
 </a>
 
 <a class="btn buy"
 href="/how-to-buy.html">
+
 How to Buy
+
 </a>
 
 </div>
 
 </section>
-
-<!-- JS LINK -->
-<script src="script.js"></script>
 
 </body>
 </html>
