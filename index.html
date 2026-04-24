@@ -254,11 +254,80 @@ font-family: "Poppins", sans-serif;
 font-weight:400;
 letter-spacing:0.5px;
 }
+
+ /* ===== LOADER ===== */
+
+#loader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#0d0d0d;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+z-index:9999;
+transition:opacity .8s ease, visibility .8s, transform .8s ease, filter .8s ease;
+}
+
+.loader-text{
+font-family:"Space Grotesk",sans-serif;
+font-size:32px;
+letter-spacing:3px;
+font-weight:500;
+color:#fff;
+margin-bottom:20px;
+}
+
+.progress-wrap{
+width:160px;
+text-align:center;
+}
+
+.progress{
+width:100%;
+height:3px;
+background:#1c1c1c;
+border-radius:20px;
+overflow:hidden;
+}
+
+.progress-bar{
+height:100%;
+width:0%;
+background:linear-gradient(90deg,#ffffff,#7c3aed,#ffffff);
+border-radius:20px;
+box-shadow:0 0 8px rgba(255,255,255,0.3);
+transition:width .3s ease;
+}
+
+/* PREMIUM EXIT */
+#loader.hide{
+opacity:0;
+visibility:hidden;
+transform:scale(1.05);
+filter:blur(10px);
+}
 </style>
 
 </head>
 
 <body>
+
+ <!-- LOADER -->
+<div id="loader">
+
+<div class="loader-text">JIYA</div>
+
+<div class="progress-wrap">
+<div class="progress">
+<div class="progress-bar" id="bar"></div>
+</div>
+</div>
+
+</div>
 
 <div class="stars">
 
@@ -312,6 +381,28 @@ How to Buy
 </div>
 
 </section>
+<script>
 
+let progress = 0;
+let bar = document.getElementById("bar");
+
+let interval = setInterval(() => {
+
+progress += 2;
+
+if(progress >= 100){
+progress = 100;
+clearInterval(interval);
+
+setTimeout(() => {
+document.getElementById("loader").classList.add("hide");
+}, 300);
+}
+
+bar.style.width = progress + "%";
+
+}, 30);
+
+</script>
 </body>
 </html>
