@@ -15,9 +15,15 @@ document.getElementById("contact-form").addEventListener("submit", async functio
 
     const feedback = document.querySelector(".contact-feedback");
 
-    feedback.innerHTML = "";
-    feedback.style.color = "";
-    feedback.style.fontWeight = "";
+feedback.innerHTML = "";
+feedback.style.color = "";
+feedback.style.fontWeight = "";
+feedback.style.background = "";
+feedback.style.border = "";
+feedback.style.borderRadius = "";
+feedback.style.padding = "";
+feedback.style.boxSizing = "";
+feedback.style.lineHeight = "";
 
     const message = document.getElementById("contact-message").value.trim();
 
@@ -158,17 +164,17 @@ Sending...
         feedback.style.fontWeight = "600";
 
         feedback.innerHTML = `
-            <div style="line-height:1.7;">
+            <div style="line-height:1.4;">
 
                 <strong style="display:block;color:#B45309;font-size:16px;font-weight:700;">
                     Your IP address has been blocked.
                 </strong>
 
-                <p style="margin:12px 0 0;color:#64748B;">
+                <p style="margin:6px 0 0;color:#64748B;">
                     You cannot submit an inquiry from this IP address.
                 </p>
 
-                <p style="margin:12px 0 0;color:#64748B;">
+                <p style="margin:6px 0 0;color:#64748B;">
                     If you believe this is a mistake, please contact us at
                     <a href="mailto:info@go7.in" style="color:#3850D5;font-weight:700;">
                         info@go7.in
@@ -430,6 +436,13 @@ text-align:center;
 
             } else {
 
+              feedback.style.background = "#FFF8ED";
+              feedback.style.border = "1px solid #FED7AA";
+              feedback.style.borderRadius = "8px";
+              feedback.style.padding = "12px 14px";
+              feedback.style.boxSizing = "border-box";
+              feedback.style.lineHeight = "1.4";  
+                
                 feedback.innerHTML =
                     '<i class="mdi mdi-alert-outline" style="margin-right:8px;"></i>' +
                     (data.error || data.message || "Unknown Error");
@@ -470,6 +483,12 @@ text-align:center;
         feedback.style.opacity = "1";
         feedback.style.color = "#B45309";
         feedback.style.fontWeight = "600";
+        feedback.style.lineHeight = "1.4";
+        feedback.style.background = "#FFF8ED";
+        feedback.style.border = "1px solid #FED7AA";
+        feedback.style.borderRadius = "8px";
+        feedback.style.padding = "12px 14px";
+        feedback.style.boxSizing = "border-box";
 
 
         feedback.innerHTML =
