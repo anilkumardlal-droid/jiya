@@ -170,7 +170,7 @@ feedback.style.padding = "12px 14px";
 feedback.style.boxSizing = "border-box";
 
         feedback.innerHTML = `
-            <div style="line-height:1.4;">
+            <div style="line-height:1.2;">
 
                 <strong style="display:block;color:#B45309;font-size:16px;font-weight:700;">
                     Your IP address has been blocked.
