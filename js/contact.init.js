@@ -148,8 +148,44 @@ Sending...
 
 
         if (!res.ok && res.status !== 429) {
-            throw new Error(data.error || "Request failed");
-        }
+
+    if (res.status === 403 && data.blocked_ip) {
+
+        feedback.style.display = "block";
+        feedback.style.visibility = "visible";
+        feedback.style.opacity = "1";
+        feedback.style.color = "#B45309";
+        feedback.style.fontWeight = "600";
+
+        feedback.innerHTML = `
+            <div style="line-height:1.7;">
+
+                <strong style="display:block;color:#B45309;font-size:16px;font-weight:700;">
+                    Your IP address has been blocked.
+                </strong>
+
+                <p style="margin:12px 0 0;color:#64748B;">
+                    You cannot submit an inquiry from this IP address.
+                </p>
+
+                <p style="margin:12px 0 0;color:#64748B;">
+                    If you believe this is a mistake, please contact us at
+                    <a href="mailto:info@go7.in" style="color:#3850D5;font-weight:700;">
+                        info@go7.in
+                    </a>.
+                </p>
+
+            </div>
+        `;
+
+        btn.disabled = true;
+        btn.style.cursor = "not-allowed";
+
+        return;
+    }
+
+    throw new Error(data.error || "Request failed");
+}
 
 
         if (data.success) {
