@@ -172,7 +172,7 @@ feedback.style.boxSizing = "border-box";
         feedback.innerHTML = `
             <div style="line-height:1.2;">
 
-                <strong style="display:block;color:#B45309;font-size:16px;font-weight:700;">
+                <strong style="display:block;color:#B45309;font-size:14px;font-weight:600;">
                     Your IP address has been blocked.
                 </strong>
               <p style="margin:2px 0 0;color:#64748B;font-size:13px;line-height:1.2;">You cannot submit an inquiry from this IP address. If you believe this is a mistake, please contact us at <a href="mailto:info@go7.in" style="color:#3850D5;">info@go7.in</a>.</p>
