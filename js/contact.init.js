@@ -161,12 +161,12 @@ Sending...
 feedback.style.visibility = "visible";
 feedback.style.opacity = "1";
 feedback.style.color = "#B45309";
-feedback.style.fontWeight = "600";
-feedback.style.lineHeight = "1.4";
+feedback.style.fontWeight = "400";
+feedback.style.lineHeight = "1.3";
 feedback.style.background = "#FFF8ED";
 feedback.style.border = "1px solid #FED7AA";
-feedback.style.borderRadius = "8px";
-feedback.style.padding = "12px 14px";
+feedback.style.borderRadius = "6px";
+feedback.style.padding = "8px 10px";
 feedback.style.boxSizing = "border-box";
 
         feedback.innerHTML = `
