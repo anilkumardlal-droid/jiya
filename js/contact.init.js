@@ -158,10 +158,16 @@ Sending...
     if (res.status === 403 && data.blocked_ip) {
 
         feedback.style.display = "block";
-        feedback.style.visibility = "visible";
-        feedback.style.opacity = "1";
-        feedback.style.color = "#B45309";
-        feedback.style.fontWeight = "600";
+feedback.style.visibility = "visible";
+feedback.style.opacity = "1";
+feedback.style.color = "#B45309";
+feedback.style.fontWeight = "600";
+feedback.style.lineHeight = "1.4";
+feedback.style.background = "#FFF8ED";
+feedback.style.border = "1px solid #FED7AA";
+feedback.style.borderRadius = "8px";
+feedback.style.padding = "12px 14px";
+feedback.style.boxSizing = "border-box";
 
         feedback.innerHTML = `
             <div style="line-height:1.4;">
