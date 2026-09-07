@@ -175,7 +175,7 @@ feedback.style.boxSizing = "border-box";
                 <strong style="display:block;color:#B45309;font-size:16px;font-weight:700;">
                     Your IP address has been blocked.
                 </strong>
-              <p style="margin:2px 0 0;color:#64748B;">You cannot submit an inquiry from this IP address. If you believe this is a mistake, please contact us at <a href="mailto:info@go7.in" style="color:#3850D5;">info@go7.in</a>.</p>
+              <p style="margin:2px 0 0;color:#64748B;font-size:13px;line-height:1.2;">You cannot submit an inquiry from this IP address. If you believe this is a mistake, please contact us at <a href="mailto:info@go7.in" style="color:#3850D5;">info@go7.in</a>.</p>
             </div>
         `;
 
